@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #777;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 50px;
+  background-color: white;
+}
+
+.container {
+  background-color: #F7F7F7;
+}
+
+.header {
+  position: relative;
+  height: 95vh;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../img/header-background.jpg) center/cover no-repeat;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+.header__logo {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  height: 70px;
+  width: 56px;
+}
+.header__box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.title-first {
+  color: white;
+  text-align: center;
+}
+.title-first span {
+  display: block;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease;
+}
+.title-first__main {
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 60px;
+  font-size: 50px;
+  letter-spacing: 10px;
+  margin-bottom: 10px;
+  animation-name: LeftToRight;
+}
+.title-first__secondary {
+  font-weight: 100;
+  line-height: 48px;
+  font-size: 40px;
+  letter-spacing: 5px;
+  animation-name: RightToLeft;
+}
+
+@keyframes LeftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes RightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}/*# sourceMappingURL=style.css.map */
